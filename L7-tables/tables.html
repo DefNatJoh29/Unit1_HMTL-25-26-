@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLES</title>
+</head>
+
+<body>
+    <!-- Simple HTML Table  -->
+    <table border="1">
+        <tr>
+            <th>Student</th>
+            <th>Grade</th>
+            <th>Subject</th>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>C+</td>
+            <td>CompSci</td>
+        </tr>
+        <tr>
+            <td>Jamie</td>
+            <td>D+</td>
+            <td>math</td>
+        </tr>
+    </table>
+    <br>
+
+    <!--Emmet Shortcuts for a contact table-->
+    <!--table>thead>tr>th*3-->
+    <table border="5">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Phone</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <!-- tbody>tr*2>td*3 -->
+         <tbody>
+            <tr>
+                <td>Ben Sock</td>
+                <td>(555)999-4167</td>
+                <td>Sock.ben@microsofthelpdesk.virus</td>
+            </tr>
+            <tr>
+                <td>Mitchell Krueger</td>
+                <td>(555)-552-6767</td>
+                <td>kruguer.mitchell@uselessEMS.scam</td>
+            </tr>
+         </tbody>
+    </table>
+
+    <!-- rowspan and colspan -->
+     <br>
+     <table border="1">
+        <tr>
+            <th rowspan="2">Name</th>
+            <th>Art</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+     </table>
+
+     <br>
+     <table border="2">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>First</td>
+            <td>Last</td>
+            <td>14</td>
+        </tr>
+     </table>
+     <br>
+     <hr>
+</body>
+
+</html>
