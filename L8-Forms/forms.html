@@ -6,7 +6,8 @@
     <title>HTML forms</title>
 </head>
 <body>
-     <form action="">
+    <h1>Contact Form</h1>
+     <form action="results.html" method="GET">
         <div>
         <table>
             <!-- Basic text-->
@@ -44,21 +45,58 @@
                 <td><textarea name="message" id="message" rows="6"></textarea></td>
              </tr>
              <!-- Radio Button (Multiple Choice)-->
+              <div>
              <tr>
                 <td>Grade:</td>
                 <td>
+                    <div>
                     <label><input type="radio" name="grade" value="9">9th</label>
                     <br>
+                    </div>
                     <label><input type="radio" name="grade" value="10">10th</label>
                     <br>
+                    <div>
                     <label><input type="radio" name="grade" value="11">11th</label>
                     <br>
+                    </div>
                     <label><input type="radio" name="grade" value="12">12th</label>
-            <!--Drop Down Menu-->
-                    
+                    </div>
+                    <!-- Checkboxes -->
+                     <tr>
+                <td>Grade:</td>
+                <td>
+                    <label><input type="checkbox" name="schooltype" value="BCA">BCA</label>
+                    <br>
+                    <label><input type="checkbox" name="schooltype" value="Bergen Tech">Bergen Tech</label>
+                    <br>
+                    <label><input type="checkbox" name="schooltype" value="Applied Tech">Applied Tech</label>
+            
+            <!-- Select Drop Down Menu-->  
+             <section>
+                    <tr>
+                        <td>Favorite Sports</td>
+                        <td>
+                            <div>
+                            <select name="sports" id="sports">
+                                <option value="" selected disabled>Select a sport:</option>
+                                <option value="soccer">Soccer</option>
+                                <option value="soccer">Baseball</option>
+                                <option value="soccer">Basketball</option>
+                                <option value="soccer">Tennis</option>
+                                <option value="soccer">Badminton</option>
+                                <option value="soccer">Ping pong</option>
+                            </select>
+                            </div>
+                        </td>
+                    </tr>
                 </td>
              </tr>
         </table>
+        </div>
+        <div>
+            </section> 
+            <!--Input type="submit" value="submit"-->
+            <button type="submit" >Submit</button>
         </div>
      </form>
 
