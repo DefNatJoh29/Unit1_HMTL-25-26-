@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nate's Gaming Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* ID Selectors */
+    #main-header {
+      background-color: navy;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #main-content {
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    #footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #nav-bar {
+      background-color: #007bff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    #nav-bar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    /* Class Selectors */
+    .card {
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .highlight {
+      background-color: #ffc107;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .price {
+      color: green;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .badge {
+      background-color: blue;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px 5px 0 0;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+      color: white;
+    }
+
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+
+    .success {
+      color: green;
+      font-weight: bold;
+    }
+
+    .testimonials {
+      background-color: #e3f2fd;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .contact-form {
+      background-color: #fff3cd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: darkorange;
+      color: white;
+    }
+
+    .about-section {
+      background-color: #d1ecf1;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .faq {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .faq h3 {
+      margin-top: 20px;
+    }
+
+    .newsletter {
+      background-color: #f0e68c;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div id="nav-bar">
+    <div><strong>Nate's Gaming Store</strong></div>
+    <div>
+      <a href="#main-content">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div id="main-header">
+    <h1>Nate's Gaming Store</h1>
+    <p>Welcome to a fun, quality, and occasionally ridiculous gaming experience.</p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <div class="card">
+      <h2>The Ultimate Gaming Experience</h2>
+      <p>
+        Dive into hyper-realistic worlds where the only limit is your reflexes. Experience vibrant visuals, immersive sound, and gameplay that keeps you coming back.
+      </p>
+      <button class="btn btn-primary">Subscribe</button>
+      <button class="btn btn-secondary">Learn More</button>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <div id="products" class="card">
+    <h2>Electric Hazard Headphones</h2>
+    <p>
+      These ultra-isolating headphones block out all background noise — perfect for intense matches or online meetings you want to ignore.
+    </p>
+    <p>Price: <span class="price">$199</span> <span class="badge">New Arrival</span></p>
+    <button class="btn btn-primary">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <h2>Gaming Laptop: Huawei 67</h2>
+    <p>
+      Featuring next-gen graphics and processors, this laptop performs so fast it might bend time (not really, but it's quick).
+    </p>
+    <p>Includes: <span class="highlight">RGB Keyboard</span>, <span class="highlight">360Hz Display</span>, <span class="highlight">Liquid Cooling</span></p>
+    <p>Price: <span class="price">$1,299</span></p>
+    <button class="btn btn-primary">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <h2>Chingis Pro Keyboard</h2>
+    <p>
+      Tested by pros and engineered for precision, this mechanical keyboard features clicky keys, macro support, and built-in snack resistance.
+    </p>
+    <p><span class="success">In Stock and ready to ship!</span></p>
+    <button class="btn btn-primary">Get Yours</button>
+  </div>
+
+  <div class="card">
+    <h2>Reclining Gaming Chair</h2>
+    <p>
+      With lumbar support and a full recline, this chair is built for comfort—unless you're over 6'5", then we wish you luck.
+    </p>
+    <p>Price: <span class="price">$299</span> <span class="badge">Top Seller</span></p>
+    <button class="btn btn-primary">Add to Cart</button>
+  </div>
+
+  <!-- About Us -->
+  <div id="about" class="about-section card">
+    <h2>About Nate's Gaming Store</h2>
+    <p>
+      Founded in 2020, Nate's Gaming Store started as a passion project and grew into a go-to destination for gamers worldwide.
+      We believe in combining performance with personality — every product is handpicked for quality and uniqueness.
+    </p>
+  </div>
+
+  <!-- Testimonials -->
+  <div id="testimonials" class="testimonials card">
+    <h2>What Our Customers Say</h2>
+    <p><strong>Latrell:</strong> "The headset I ordered came in a day early! Customer service was responsive and helpful."</p>
+    <p><strong>Jamal:</strong> "The keyboard feels amazing. Typing is now fun again. My cat also approves!"</p>
+    <p><strong>LeBron:</strong> "Ordered a gaming mouse. Fast delivery, great packaging, and it improved my aim (a little)." </p>
+    <p><strong>Amira:</strong> "Affordable and stylish gear. Plus, I love the humor on this site!"</p>
+  </div>
+
+  <!-- FAQ Section -->
+  <div id="faq" class="faq card">
+    <h2>Frequently Asked Questions</h2>
+    <h3>Q: Do you ship internationally?</h3>
+    <p>A: Yes! We ship to over 50 countries worldwide with tracking available.</p>
+   
+    <h3>Q: Can I return a product if I’m not satisfied?</h3>
+    <p>A: Absolutely. We offer a 30-day no-questions-asked return policy, as long as the product is in its original condition.</p>
+
+    <h3>Q: Are your products under warranty?</h3>
+    <p>A: Most products come with a 1-year warranty. Check the individual product page for specific details.</p>
+
+    <h3>Q: Do you offer discounts for bulk purchases?</h3>
+    <p>A: Yes, we do! Contact our support team for custom quotes on bulk or team orders.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="contact-form card">
+    <h2>Contact Us</h2>
+    <p>Have a question or feedback? We'd love to hear from you!</p>
+    <form>
+      <input type="text" placeholder="Your Full Name" required />
+      <input type="email" placeholder="Your Email Address" required />
+      <input type="text" placeholder="Subject" />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button class="btn">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Newsletter Signup -->
+  <div class="newsletter card">
+    <h2>Join Our Newsletter</h2>
+    <p>Get the latest product drops, exclusive offers, and gaming tips straight to your inbox.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button class="btn btn-primary">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- Images Section -->
+  <div class="card">
+    <h2>Our Store Mascot</h2>
+    <p>Meet NateBot, our store mascot and unofficial product tester. He's 90% wires, 10% attitude.</p>
+    <img src="images/profilepicture.png" alt="Store Mascot NateBot">
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <p>&copy; 2025 Nate's Gaming Store. All rights reserved. | Designed by Nate</p>
+    <p><a href="#top" style="color: white; text-decoration: underline;">Back to Top</a></p>
+  </div>
+
+</body>
+</html>
